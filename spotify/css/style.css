@@ -1,0 +1,150 @@
+
+:root{
+	--color-fondo:#1C1C1C;
+	--color-fondo-secundario:#424242;
+	--gradiente-de-fondo:linear-gradient(#424242,#1C1C1C);
+	--color-tipografia:white;
+	--verde-spotify:#1db954;
+	--tipografia: 'Roboto', sans-serif;
+}
+*{
+	padding: 0;
+	margin:0;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body{
+	background: var(--gradiente-de-fondo);
+}
+i,p{
+	color: var(--color-tipografia);
+	font-family:var(--tipografia);
+}
+a#play,a#pause {
+    margin: 10px;
+}
+.imagen{
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+}
+.play{
+	width: 20px;
+	height: 20px;
+	padding:10px;
+}
+
+  .container {
+background-color:var(--color-fondo);
+  }
+  .slider-wrapper input {
+	width: 150px;
+	height: 5px;
+	margin: 0;
+	transform-origin: 75px 75px;
+	transform: rotate(-90deg);
+  }
+  .hp_slide{
+    width:100%;
+    background:white;
+	height:5px;
+
+	border-radius: 5px;
+}
+.hp_range{
+    width:0;
+    background:var(--verde-spotify);
+	height:5px;
+	
+}
+.card {
+	margin: 20px;
+}
+input#mislider {
+	margin-top: 45px;
+}
+.footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color:var(--color-fondo);
+	color: white;
+	text-align: center;
+
+}
+
+.lista{
+	position: -webkit-sticky;
+	position: sticky;
+
+	height: 100%;
+	background-color: #1C1C1C;
+}
+
+.lista {
+    color: white;
+}
+.footer {
+  margin-left: 0px; 
+}
+.playlist{
+	  background:var(--verde-spotify);
+}
+li{
+	list-style: none;
+}
+a{
+	color:white;
+	text-decoration: none;
+	margin-left: 10px;
+}
+.ajustar{
+	width: 100%;
+}
+.col-md-3.tema{
+	margin: 0;
+    padding: 0;
+    overflow:hidden;
+}
+
+
+.play{
+	position: absolute;
+	z-index: 10;
+	left: -100px;
+	top:50px;
+	opacity: 0;
+	transition: all .4s;
+	
+}
+div.tema:hover>i.play{
+	left:60px;
+	opacity: 1;
+
+}
+form {
+	margin-top: 10px;
+	width: 500px;
+	margin: auto;
+    background:var(--verde-spotify);
+    padding: 10px;
+}
+
+
+input[type="password"], input[type="submit"],input[type="text"]{
+border-radius: 5px;
+	width: 100%;
+	border: none;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+form {
+    margin-top: 200px;
+}
+
+h5,h4,h3 {
+    color: white;
+}
